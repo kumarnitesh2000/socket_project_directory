@@ -31,7 +31,6 @@ mongo.connect(uri, { useUnifiedTopology: true }, function (err, client) {
     collection
       .find()
       .limit(100)
-      .sort({ _id: 1 })
       .toArray(function (err, res) {
         if (err) throw err;
         //emit the message
