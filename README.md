@@ -5,9 +5,9 @@
 
 ### Client Side OverView 
 
-1. at first we do setup ton listen for events on give url so for this first we use socket client library
-2. then after successful connection we will set the events which we want to listen to perform some action. so `on` function is there in socket so we listen for events `output` , `cleared` and `status`. in output we list down all the messages , in cleared we list set the status text to cleared.
-3. at client side we also use emit function to push the event towards backend. so `emit` for `input` and `clear`. on input we sent the message payload to backend and on clear we send msg to backend to clear the chat history
+1. at first we do setup to listen for events on give url so for this first we use socket client library
+2. then after successful connection we will set the events which we want to listen to perform some action. so `on` function is there in socket so we listen for events `output` , `cleared` and `status`. in `output` we list down all the messages , in `cleared` we set the status text to cleared.
+3. at client side we also use `emit` function to push the event towards backend. so `emit` for `input` and `clear`. on input we sent the message payload to backend and on `clear` we send msg to backend to clear the chat history
 
 ### Server Side OverView
 
@@ -21,10 +21,10 @@
 1. install node on your system
 ## How to run
 1. clone this repo and cd to repo/db_sync_chat_app
-2. cd to server and run `npm i` and then start the server by `npm start`.
+2. cd to server and run `npm i`(first time) and then start the server by `npm start`.
 3. cd .. and move to client folder by cd client and open index.html in browser
 
-> client output
+> client output demo
 
 ![image](./resources/output.png)
 
